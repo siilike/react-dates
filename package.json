@@ -3,6 +3,16 @@
   "version": "21.8.0",
   "description": "A responsive and accessible date range picker component built with React",
   "main": "index.js",
+	"exports": {
+		".": "./esm/index.js",
+		"./constants": "./esm/constants.js",
+		"./initialize": "./esm/initialize.js",
+		"./defaultPhrases": "./esm/defaultPhrases.js",
+		"./components/*": "./esm/components/*.js",
+		"./shapes/*": "./esm/shapes/*.js",
+		"./theme/*": "./esm/theme/*.js",
+		"./utils/*": "./esm/utils/*.js"
+	},
   "scripts": {
     "prebuild": "npm run clean",
     "build": "npm run build:cjs && npm run build:esm && npm run build:css -- --optimize ",
